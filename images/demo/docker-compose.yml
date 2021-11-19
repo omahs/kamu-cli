@@ -5,7 +5,7 @@ networks:
 
 services:
   jupyter:
-    image: kamudata/kamu-cli-demo-jupyter:latest
+    image: kamudata/odds-demo-jupyter:latest
     command:
       - "start-notebook.sh"
       - "--port=8765"

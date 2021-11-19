@@ -9,12 +9,12 @@ jupyter:
 	docker build \
 		-f Dockerfile.jupyter \
 		--build-arg KAMU_VERSION=$(KAMU_VERSION) \
-		-t $(IMAGE_REPO)/kamu-cli-demo-jupyter:latest \
+		-t $(IMAGE_REPO)/odds-demo-jupyter:latest \
 		.
 
 .PHONY: jupyter-push
 jupyter-push:
-	docker push $(IMAGE_REPO)/kamu-cli-demo-jupyter:latest
+	docker push $(IMAGE_REPO)/odds-demo-jupyter:latest
 
 #########################################################################################
 
@@ -58,7 +58,7 @@ strip-notebooks:
 
 podman-images: podman-images/
 podman-images/:
-	docker run --rm --entrypoint bash $(IMAGE_REPO)/kamu-cli-demo-jupyter:latest \
+	docker run --rm --entrypoint bash $(IMAGE_REPO)/odds-demo-jupyter:latest \
 		-c "kamu init --pull-images --list-only | grep -e spark -e flink" | \
 		xargs -n 1 -- podman --root podman-images pull
 
