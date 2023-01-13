@@ -52,7 +52,7 @@ Data scientists, analysts, ML/AI researchers, and engineers can then:
 * Easily **keep datasets up-to-date**
 * Safely **reuse data** created by the hard work of the community
 
-The reuse is achieved by maintaining **unbreakable lineage and provenance trail** in **tamper-proof** metadata, which lets you assess the trustworthyness of data, no matter how many hands and transformation steps it went through.
+The reuse is achieved by maintaining **unbreakable lineage and provenance trail** in **tamper-proof** metadata, which lets you assess the trustworthiness of data, no matter how many hands and transformation steps it went through.
 
 In a larger context, `kamu` is a reference implementation of [Open Data Fabric](https://github.com/kamu-data/open-data-fabric) - a Web 3.0 protocol for providing timely, high-quality, and verifiable data for data science, smart contracts, web and applications.
 
